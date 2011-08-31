@@ -1,0 +1,99 @@
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition>
+ <Creator>
+  <Name>Q Light Controller</Name>
+  <Version>3.0.4</Version>
+  <Author></Author>
+ </Creator>
+ <Manufacturer>Chauvet</Manufacturer>
+ <Model>Scorpion Storm FX</Model>
+ <Type>Laser</Type>
+ <Channel Name="Mode" >
+  <Group Byte="0" >Nothing</Group>
+  <Capability Min="0" Max="0" >DMX</Capability>
+  <Capability Min="20" Max="20" >Automatic fast (red)</Capability>
+  <Capability Min="40" Max="40" >Automatic slow (red)</Capability>
+  <Capability Min="60" Max="60" >Automatic fast (green)</Capability>
+  <Capability Min="80" Max="80" >Automatic slow (green)</Capability>
+  <Capability Min="100" Max="100" >Automatic fast (red &amp; green)</Capability>
+  <Capability Min="120" Max="120" >Automatic slow (red &amp; green)</Capability>
+  <Capability Min="140" Max="140" >Sound (red)</Capability>
+  <Capability Min="160" Max="160" >Sound (green)</Capability>
+  <Capability Min="180" Max="180" >Sound (red &amp; green)</Capability>
+  <Capability Min="200" Max="200" >Random</Capability>
+ </Channel>
+ <Channel Name="Color" >
+  <Group Byte="0" >Colour</Group>
+  <Capability Min="0" Max="0" >Blackout</Capability>
+  <Capability Min="5" Max="5" >Red</Capability>
+  <Capability Min="29" Max="29" >Green</Capability>
+  <Capability Min="57" Max="57" >Red &amp; Green</Capability>
+  <Capability Min="85" Max="85" >Green strobing</Capability>
+  <Capability Min="113" Max="113" >Red strobing</Capability>
+  <Capability Min="141" Max="141" >Red on &amp; green strobing</Capability>
+  <Capability Min="169" Max="169" >Green on &amp; red strobing</Capability>
+  <Capability Min="198" Max="198" >Red &amp; green strobing</Capability>
+  <Capability Min="225" Max="225" >Red &amp; green (alternate strobing)</Capability>
+ </Channel>
+ <Channel Name="Strobe" >
+  <Group Byte="0" >Speed</Group>
+  <Capability Min="0" Max="0" >No strobe</Capability>
+  <Capability Min="5" Max="254" >Slow -> fast</Capability>
+  <Capability Min="255" Max="255" >Strobe to sound</Capability>
+ </Channel>
+ <Channel Name="Rotation (motor 1)" >
+  <Group Byte="0" >Speed</Group>
+  <Capability Min="0" Max="0" >Stop</Capability>
+  <Capability Min="5" Max="127" >Clockwise (slow -> fast)</Capability>
+  <Capability Min="128" Max="128" >Stop</Capability>
+  <Capability Min="134" Max="255" >Couterclockwise (slow -> fast)</Capability>
+ </Channel>
+ <Channel Name="Stutter (motor 1)" >
+  <Group Byte="0" >Effect</Group>
+  <Capability Min="0" Max="0" >None</Capability>
+  <Capability Min="5" Max="56" >Mode 1 (slow -> fast)</Capability>
+  <Capability Min="57" Max="112" >Mode 2 (slow -> fast)</Capability>
+  <Capability Min="113" Max="168" >Mode 3 (slow -> fast)</Capability>
+  <Capability Min="169" Max="255" >Mode 4 (slow -> fast)</Capability>
+ </Channel>
+ <Channel Name="Rotation (motor 2)" >
+  <Group Byte="0" >Speed</Group>
+  <Capability Min="0" Max="0" >Stop</Capability>
+  <Capability Min="5" Max="127" >Clockwise (slow -> fast)</Capability>
+  <Capability Min="128" Max="128" >Stop</Capability>
+  <Capability Min="134" Max="255" >Couterclockwise (slow -> fast)</Capability>
+ </Channel>
+ <Channel Name="Stutter (motor 2)" >
+  <Group Byte="0" >Effect</Group>
+  <Capability Min="0" Max="0" >None</Capability>
+  <Capability Min="5" Max="56" >Mode 1 (slow -> fast)</Capability>
+  <Capability Min="57" Max="112" >Mode 2 (slow -> fast)</Capability>
+  <Capability Min="113" Max="168" >Mode 3 (slow -> fast)</Capability>
+  <Capability Min="169" Max="255" >Mode 4 (slow -> fast)</Capability>
+ </Channel>
+ <Mode Name="DMX" >
+  <Physical>
+   <Bulb Lumens="0" Type="" ColourTemperature="0" />
+   <Dimensions Width="0" Height="0" Weight="0" Depth="0" />
+   <Lens DegreesMax="0" Name="Other" DegreesMin="0" />
+   <Focus PanMax="0" Type="Fixed" TiltMax="0" />
+  </Physical>
+  <Channel Number="0" >Mode</Channel>
+  <Channel Number="1" >Color</Channel>
+  <Channel Number="2" >Strobe</Channel>
+  <Channel Number="3" >Rotation (motor 1)</Channel>
+  <Channel Number="4" >Stutter (motor 1)</Channel>
+  <Channel Number="5" >Rotation (motor 2)</Channel>
+  <Channel Number="6" >Stutter (motor 2)</Channel>
+ </Mode>
+ <Mode Name="Automatic" >
+  <Physical>
+   <Bulb Lumens="0" Type="" ColourTemperature="0" />
+   <Dimensions Width="0" Height="0" Weight="0" Depth="0" />
+   <Lens DegreesMax="0" Name="Other" DegreesMin="0" />
+   <Focus PanMax="0" Type="Fixed" TiltMax="0" />
+  </Physical>
+  <Channel Number="0" >Mode</Channel>
+ </Mode>
+</FixtureDefinition>
+
